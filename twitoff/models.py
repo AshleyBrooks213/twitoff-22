@@ -33,8 +33,8 @@ class Tweet(DB.Model):
 
 """This function creates example users using the User class"""
 def insert_example_users():
-    nick = User(id=1, name="Nick")
-    elon = User(id=2, name="elonmusk")
-    DB.session.add(nick)
+    jack = User(id=0, name="jackblack")
+    elon = User(id=1, name="elonmusk")
+    DB.session.add(jack)
     DB.session.add(elon)
     DB.session.commit()
